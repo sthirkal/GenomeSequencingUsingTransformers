@@ -170,7 +170,7 @@ class Block(nn.Module):
         x = x + self.ffwd(self.ln2(x))
         return x
 
-class BigramLanguageModel(nn.Module):
+class Transformer(nn.Module):
 
     def __init__(self):
         super().__init__()
@@ -216,7 +216,7 @@ class BigramLanguageModel(nn.Module):
         return idx
 
 
-model = BigramLanguageModel()
+model = Transformer()
 m = model.to(device)
 optimizer = torch.optim.AdamW(m.parameters(), lr=learning_rate, betas=(0.9,0.98), eps=1e-9)
 
