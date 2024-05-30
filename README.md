@@ -6,20 +6,19 @@ Generating mutated genome sequence using Transformers and Multiheaded Attention 
 1. Pytorch
 2. Numpy
 
-# What does it do...
+# What it does
 
-This is a novel approach to the existing field of genome sequencing. Using State-of-the-Art Architecture for Language Model, Transformers, We introduce scalability and efficiency in the field of Genome Sequencing.
-This model analyzes all the input genome sequences of a certain virus and predicts the mutated genomic sequence of that virus that may occur in the foreseeable future. This allows the researchers in biotech to work on more data regarding the virus and work on the cure for that disease even before the mutation occurs. This AI model helps in the field of Vaccinology and BioInformatics.
+The ongoing evolution of viruses poses a significant challenge to public health, necessitating the development of predictive models to predict genetic mutations in virus DNA. This paper presents a novel approach to predicting mutations in virus DNA sequences through the utilization of Multiheaded Attention, a deep learning mechanism originally designed for natural language processing tasks. By adapting this architecture to the genomics domain, we aim to enhance our ability to forecast viral mutation events accurately and use it to our advantage.
 
 # Tests conducted
 
-This model is tested with the most trending disease of 2020 COVID-19, We fed the model the data of all the variants discovered on COVID-19. We ran the output through BLAST(A genome analysis tool) and we found some major similarities in both the Sequences.
+This model has been tested with the genomic sequences of COVID-19 and its variants. The output was then run through BLAST(A genome analysis tool) and analysed, uncovering some major similarities and mutations in the generated sequences.
 
 # Changes to the Original Transformer Model
 
-1)This model contains only a decoder from the original transformer with a low training cost. (Lack of funding, So didn't work on the Encoder Part).
+1)This model contains only a decoder from the original transformer with a low training cost.
 2)Codon Tokenizer: The Tokenizer for this model is designed to tokenize and differentiate between different codons found in the input genomic sample.
 
-# Things to expect from this project
+# Things to expect
 
 Version 2 for this model is a work-in-progress with a team that works on the biological aspect of the project like methods to improve the tokenizer and finding a way to analyze the output of the Model.
